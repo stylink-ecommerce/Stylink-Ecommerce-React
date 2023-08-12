@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-page-bg {
+    background-image: url('./../public/chico_estadio.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -500px;
+}
+
+
+.features-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;    
+}  
+.features-title {
+    font-weight: 700;
+    font-size: 75px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: -.02em;
+}
+.features-text {
+    padding-top: 2em;
+}
+p {
+    font-weight: 400;
+    font-size: 1.4em;
+    letter-spacing: -.029em;
+    line-height: 2em;
+    text-align: center;
+}
+.features-gradients {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba( 1, 1, 1, 0.25);
+    filter: blur(12em);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+}
+.features-gradient-1 {
+    width: 250px;
+    height: 200px;
+    top: 40%;
+    left: 60%;
+    background-color: #50e3c2;
+    animation: animation-1 10s infinite;
+    position: absolute;
+    border-radius: 100%;
+    z-index: -2; 
+}
+
+.features-gradient-2 {
+    width: 200px;
+    height: 150px;
+    top: 60%;
+    left: 40%;
+    background-color: #7928ca;
+    animation: animation-2 10s infinite;
+    position: absolute;
+    border-radius: 100%;
+    z-index: -2;
+}
+
+.features-gradient-3 {
+    width: 150px;
+    height: 100px;
+    top: 50%;
+    left: 50%;
+    background-color: #50e3c2;
+    animation: animation-3 10s infinite;
+    position: absolute;
+    border-radius: 100%;
+    z-index: -2;
+}
+
+
+
+
+@keyframes animation-1 {
+    0% {
+        transform: translateY(-50%) translateX(-50%) translateX(-15%) translateY(10%);
+    }
+    20% {
+        transform: translateY(-50%) translateX(-50%) translateX(-20%) translateY(-30%);
+    }
+    40% {
+        transform: translateY(-50%) translateX(-50%) translateX(-25%) translateY(-15%);
+    }
+    60% {
+        transform: translateY(-50%) translateX(-50%) translateX(30%) translateY(20%);
+    }
+    80% {
+        transform: translateY(-50%) translateX(-50%) translateX(5%) translateY(35%);
+    }
+    to {
+        transform: translateY(-50%) translateX(-50%) translateX(-15%) translateY(10%);
+    }
+}
+@keyframes animation-2  {
+    0% {
+        transform: translateY(-50%) translateX(-50%) rotate(-20deg) translateX(20%);
+    }
+    25% {
+        transform: translateY(-50%) translateX(-50%) skew(-15deg, 15deg) rotate(-80deg) translateX(30%);
+    }
+    50% {
+        transform: translateY(-50%) translateX(-50%) rotate(180deg) translateX(25%);
+    }
+    75% {
+        transform: translateY(-50%) translateX(-50%) skew(-15deg, 15deg) rotate(240deg) translateX(15%);
+    }
+    to {
+        transform: translateY(-50%) translateX(-50%) rotate(340deg) translateX(20%);
+    }
+}
+@keyframes animation-3 {
+    0% {
+        transform: translateY(-50%) translateX(-50%) translateX(-15%) translateY(10%);
+    }
+    20% {
+        transform: translateY(-50%) translateX(-50%) translateX(20%) translateY(-30%);
+    }
+    40% {
+        transform: translateY(-50%) translateX(-50%) translateX(-25%) translateY(-15%);
+    }
+    60% {
+        transform: translateY(-50%) translateX(-50%) translateX(30%) translateY(20%);
+    }
+    80% {
+        transform: translateY(-50%) translateX(-50%) translateX(5%) translateY(35%);
+    }
+    to {
+        transform: translateY(-50%) translateX(-50%) translateX(-15%) translateY(10%);
+    }
+}
+
+@media (min-width: 640px){
+    .features-gradient-1 {
+        width: 500px;
+        height: 400px;
+        top: 40%;
+        left: 60%;
+        background-color: #50e3c2;
+        animation: animation-1 10s infinite; /* Aquí se ha eliminado las comillas */
+        position: absolute;
+        border-radius: 100%;
+        z-index: -2; 
+    }
+    
+    .features-gradient-2 {
+        width: 400px;
+        height: 300px;
+        top: 60%;
+        left: 40%;
+        background-color: #7928ca;
+        animation: animation-2 10s infinite;
+        position: absolute;
+        border-radius: 100%;
+        z-index: -2;
+    }
+    
+    .features-gradient-3 {
+        width: 300px;
+        height: 200px;
+        top: 50%;
+        left: 50%;
+        background-color: #50e3c2;
+        animation: animation-3 10s infinite;
+        position: absolute;
+        border-radius: 100%;
+        z-index: -2;
+    }
+}

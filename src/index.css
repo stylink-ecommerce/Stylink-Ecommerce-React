@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    /* h1{
+        @apply text-7xl text-white
+    } */
+
+    body{
+        @apply bg-skin-main text-skin-primary overflow-hidden
+    }
+
+    .tailwind_1-5_grid{
+        grid-template-columns: 1fr 5fr;
+    }
+}
+
+
+@layer base {
+    :root {
+      --background-gradient: rgb(14, 2, 12);
+      --color-gradient-1: rgba(14, 2, 12, 1) 40%;
+      --color-gradient-2: rgba(64, 12, 56, 1) 64%;
+      --color-gradient-3: rgba(76, 25, 69, 1) 83%;
+      --color-gradient-4: rgba(129, 45, 117, 1) 100%;
+      --bg-color-body: theme(colors.main-black.main);
+      --color-text-primary: theme(colors.secondary-white.100);
+      --color-text-muted: theme(colors.main-black.400)
+    }
+    .theme-white {
+        --background-gradient: rgb(14, 2, 12);
+        --color-gradient-1: rgba(14, 2, 12, 1) 40%;
+        --color-gradient-2: rgba(64, 12, 56, 1) 64%;
+        --color-gradient-3: rgba(76, 25, 69, 1) 83%;
+        --color-gradient-4: rgba(129, 45, 117, 1) 100%;
+        --bg-color-body: theme(colors.secondary-white.main);
+        --color-text-muted: theme(colors.main-black.400)
+    }
+  
+    .theme-dark {
+        --background-gradient: rgb(14, 2, 12);
+        --color-gradient-1: rgba(14, 2, 12, 1) 40%;
+        --color-gradient-2: rgba(64, 12, 56, 1) 64%;
+        --color-gradient-3: rgba(76, 25, 69, 1) 83%;
+        --color-gradient-4: rgba(129, 45, 117, 1) 100%;
+        --bg-color-body: theme(colors.main-black.main);
+        --color-text-muted: theme(colors.main-black.400)
+    }
+  
+
+  }
+

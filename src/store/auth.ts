@@ -24,7 +24,6 @@ interface IAuthState {
   setToken: (token: string) => void;
   setProfile: (profile: ProfileInterface) => void;
   logout: () => void;
-  savedEvents: any; /// TODO EVENTS TYPE
 }
 
 export const useCalendarStore: StateCreator<ICalendarState> = (set) => ({
@@ -36,7 +35,6 @@ export const useCalendarStore: StateCreator<ICalendarState> = (set) => ({
   setDaySelected: (day) => set(() => ({ selectedDay: day })),
   isEventModalActive: false,
   showOrHideEventModal: (toggleModal: boolean) => set(() => ({ isEventModalActive: toggleModal })),
-  savedEvents: null,
 });
 
 export const useGlobalStore = create<ICalendarState>((...a) => ({

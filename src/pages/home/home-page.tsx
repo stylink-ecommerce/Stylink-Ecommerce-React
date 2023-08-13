@@ -93,33 +93,27 @@ const HomePage = () => {
           </div>
         </section>
 
-        <section className="container mx-auto flex min-h-screen w-full flex-col gap-y-10 bg-skin-main lg:px-24">
+        <section className="container mx-auto flex min-h-screen w-full flex-col gap-y-10 bg-skin-main px-5 lg:px-24">
           <header className="w-full">
-            <ul className="flex gap-x-5">
+            <ul className="grid grid-cols-7 grid-rows-1 gap-36 overflow-auto lg:flex lg:gap-0 lg:gap-x-5">
               {categorias.map((categoria) => {
-                // const classes = categoria.active ? (
-                //   'rounded-full border-2 p-2'
-                // ) : (
-
-                // );
-
                 return (
                   <li
                     key={categoria.name}
                     className={twMerge(
-                      'grow cursor-pointer rounded-full border-4 border-skin-main p-3 text-2xl',
+                      'inline-block h-auto w-32 grow cursor-pointer items-center justify-center rounded-full border-2 border-skin-main p-2 text-center text-sm lg:w-28 lg:text-base',
                       categoria.active ? 'bg-skin-secondary text-skin-secondary' : ''
                     )}
                   >
-                    <h3 className="text-center"> {categoria.name.toUpperCase()}</h3>
+                    {categoria.name.toUpperCase()}
                   </li>
                 );
               })}
             </ul>
           </header>
-          <main className="flex flex-wrap justify-between gap-y-5">
+          <main className="flex flex-col flex-wrap justify-between gap-x-5 gap-y-5 sm:flex-row">
             {productos.map((producto) => (
-              <div key={producto.name} className="w-[30%] rounded-xl border border-skin-muted bg-skin-main p-5">
+              <div key={producto.name} className="grow rounded-xl border border-skin-muted bg-skin-main p-5 sm:w-5/12 lg:w-[30%]">
                 <figure className="flex h-64 w-full justify-center rounded-xl bg-secondary-white-300 p-5">
                   <img src="/totte_bags_bad_bnny.png" className="w-fill h-full" alt="" />
                 </figure>

@@ -2,7 +2,7 @@
 
 const primary_black = {
   '50': '#f6f6f6',
-  '100': '#e7e7e7',
+  '100': '#F5F5F5',
   '200': '#d1d1d1',
   '300': '#b0b0b0',
   '400': '#888888',
@@ -35,12 +35,22 @@ export default {
       textColor: {
         skin: {
           primary: 'var(--color-text-primary)',
+          secondary: 'var(--color-text-secondary)',
           muted: 'var(--color-text-muted)',
         },
       },
       backgroundColor: {
         skin: {
           main: 'var(--bg-color-body)',
+          secondary: 'var(--bg-color-secondary)',
+          home_cards: 'var(--bg-home-cards)',
+        },
+      },
+      borderColor: {
+        skin: {
+          main: 'var(--bg-color-secondary)',
+          secondary: 'var(--bg-color-body)',
+          muted: 'var(--color-text-muted)',
         },
       },
       colors: {

@@ -8,9 +8,7 @@ const MainLayout = ({ children }: any) => {
       <header className="fixed top-0 z-50 w-full">
         <Navbar />
       </header>
-      <main className="overflow-hidden">
-        <Outlet></Outlet>
-      </main>
+      <Outlet></Outlet>
       <Footer />
     </>
   );

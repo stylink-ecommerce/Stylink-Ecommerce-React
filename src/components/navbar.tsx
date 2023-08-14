@@ -28,7 +28,7 @@ const Navbar = () => {
   return (
     <nav className="container mx-auto flex w-full items-center justify-between gap-x-5 bg-black bg-transparent p-2 px-7 lg:px-24">
       <figure className="w-20">
-        <img src="/logo_stylink.png" className="h-auto w-full rounded-xl" alt="" />
+        <img src="/logo_stylink.jpg" className="h-auto w-full rounded-xl" alt="" />
       </figure>
       <div className="hidden grow justify-around lg:flex">
         {pagesLinks.map((page) => {
@@ -42,7 +42,7 @@ const Navbar = () => {
           );
         })}
       </div>
-      <ShoppingCart className="h-8 w-8 cursor-pointer text-skin-muted transition duration-300  hover:scale-110 hover:text-skin-primary" />
+      <ShoppingCart className="text-skin-main h-8 w-8 cursor-pointer transition duration-300  hover:scale-110 hover:text-skin-primary" />
     </nav>
   );
 };

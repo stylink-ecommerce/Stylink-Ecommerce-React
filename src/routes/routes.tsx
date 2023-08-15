@@ -1,7 +1,6 @@
 import { Navigate, useRoutes } from 'react-router-dom';
 import HomePage from '../pages/home/home-page';
 import ShopPage from '../pages/auth/register-page';
-import AboutPage from '../pages/about/about-page';
 import AppointmentsPage from '../pages/blog/blog-page';
 // import { useAuthStore2 } from '../store/auth';
 import MainLayout from '../pages/layouts/main-layout';
@@ -29,7 +28,7 @@ export default function Router() {
           ],
         },
         { path: 'blog', element: <AppointmentsPage /> },
-        { path: 'about', element: <AboutPage /> },
+        { path: 'about', element: <h1>About Page</h1> },
         { path: 'contact', element: <ContacPage /> },
       ],
     },

@@ -98,7 +98,7 @@ const HomePage = () => {
     <>
       {/* features box */}
       <main className="">
-        <section className="main-page-bg animate-fade-in-slow flex h-screen items-center justify-center px-5 md:justify-start md:px-12 lg:px-24">
+        <section className="main-page-bg animate-fade-in-slow flex min-h-screen items-center justify-center px-5 md:justify-start md:px-12 lg:px-24">
           <div className="relative z-0 flex flex-col items-center gap-y-10 font-bold text-skin-primary md:w-1/2">
             <div className="flex flex-col">
               <h1 className="w-full text-center text-5xl md:text-6xl 2xl:text-8xl">Be</h1>
@@ -110,7 +110,7 @@ const HomePage = () => {
               <h3 className="mb-4 text-center text-xl lg:text-2xl">Personalizamos tus camisas, hoodies, totebags, tazas y más.</h3>
             </div>
             <div className="flex w-full flex-col items-center justify-center gap-y-5 md:flex-row md:gap-x-5">
-              <button className="w-full grow rounded-full border-4 bg-skin-main p-3 text-skin-primary transition duration-300 hover:bg-skin-secondary hover:text-skin-secondary sm:w-3/4 lg:w-56 lg:grow-0 lg:p-5 lg:text-xl">
+              <button className="w-full grow rounded-full border-4 border-skin-main bg-skin-main p-3 text-skin-primary transition duration-300 hover:bg-skin-secondary hover:text-skin-secondary sm:w-3/4 lg:w-56 lg:grow-0 lg:p-5 lg:text-xl">
                 Comienza a Crear
               </button>
               <button className="w-full grow rounded-full border-4 bg-skin-secondary p-3 text-skin-secondary sm:w-3/4 lg:w-56 lg:grow-0 lg:p-5 lg:text-xl">
@@ -135,7 +135,7 @@ const HomePage = () => {
           <h1 className="w-full text-center text-4xl font-bold md:w-1/2 md:text-4xl lg:text-5xl 2xl:text-7xl">Estamos para personalizar tu vida</h1>
         </section>
 
-        <section className="container mx-auto flex min-h-screen w-full flex-col gap-y-10 bg-skin-main px-5 py-16 lg:px-24 lg:py-24">
+        <section className="container mx-auto flex min-h-screen w-full flex-col justify-center gap-y-10 bg-skin-main px-5 py-16 lg:px-24 lg:py-24">
           <header className="w-full">
             <ul className="grid grid-cols-7 grid-rows-1 gap-36 overflow-auto lg:flex lg:gap-0 lg:gap-x-5">
               {categorias.map((categoria) => {
@@ -157,7 +157,7 @@ const HomePage = () => {
             {productos.map((producto) => (
               <div key={producto.name} className="w-full rounded-xl border border-skin-muted bg-skin-main p-5 sm:w-5/12 sm:grow lg:w-[30%]">
                 <figure className="flex h-64 w-full justify-center rounded-xl bg-secondary-white-300 p-5">
-                  <img src="/totte_bags_bad_bnny.png" className="w-fill h-full" alt="" />
+                  <img src="/totte_bags_bad_bnny.png " className="w-fill h-full" alt="" />
                 </figure>
                 <div>
                   <span className="text-xl font-semibold text-secondary-white-300">{producto.name}</span>
@@ -168,6 +168,10 @@ const HomePage = () => {
               </div>
             ))}
           </main>
+        </section>
+
+        <section className="min-h-screen">
+          <h1>Metodos de Pago</h1>
         </section>
       </main>
     </>

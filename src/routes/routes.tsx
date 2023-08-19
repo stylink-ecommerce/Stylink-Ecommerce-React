@@ -5,6 +5,7 @@ import AppointmentsPage from '../pages/blog/blog-page';
 // import { useAuthStore2 } from '../store/auth';
 import MainLayout from '../pages/layouts/main-layout';
 import ContacPage from '../pages/contact/contact-page';
+import AboutPage from '../pages/about/about';
 
 export default function Router() {
   // const isAuth = useAuthStore2((state) => state.isAuth  );
@@ -28,7 +29,7 @@ export default function Router() {
           ],
         },
         { path: 'blog', element: <AppointmentsPage /> },
-        { path: 'about', element: <h1>About Page</h1> },
+        { path: 'about', element: <AboutPage /> },
         { path: 'contact', element: <ContacPage /> },
       ],
     },

@@ -26,7 +26,7 @@ const pagesLinks = [
 
 const Navbar = () => {
   return (
-    <nav className="container mx-auto flex w-full items-center justify-between gap-x-5 bg-black bg-transparent p-2 px-7 lg:px-24">
+    <nav className="container-fluid mx-auto flex w-full items-center justify-between gap-x-5 bg-[#18181b]  p-2 px-7 lg:px-24">
       <figure className="w-20">
         <img src="/logo_stylink.jpg" className="h-auto w-full rounded-xl" alt="" />
       </figure>

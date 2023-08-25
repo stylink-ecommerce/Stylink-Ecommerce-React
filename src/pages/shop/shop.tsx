@@ -201,7 +201,7 @@ const categorias = [
 
 const ShopPage = () => {
     return (
-        <section className="container mx-auto flex min-h-screen w-full flex-col justify-center gap-y-10 bg-skin-main px-5 py-16 lg:px-24 lg:py-24">
+        <section className="container mx-auto my-10 flex min-h-screen w-full flex-col justify-center gap-y-10 bg-skin-main px-5 py-16 lg:px-24 lg:py-24">
           <header className="w-full">
             <ul className="grid grid-cols-7 grid-rows-1 gap-36 overflow-auto lg:flex lg:gap-0 lg:gap-x-5">
               {categorias.map((categoria) => {

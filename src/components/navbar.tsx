@@ -28,7 +28,7 @@ const Navbar = () => {
   return (
     <nav className="container-fluid mx-auto flex w-full items-center justify-between gap-x-5 bg-[#18181b]  p-2 px-7 lg:px-24">
       <figure className="w-20">
-        <img src="/logo_stylink.jpg" className="h-auto w-full rounded-xl" alt="" />
+        <img src="/logo_stylink.png" className=" h-20" alt="logo" />
       </figure>
       <div className="hidden grow justify-around lg:flex">
         {pagesLinks.map((page) => {

@@ -1,12 +1,11 @@
 import { Navigate, useRoutes } from 'react-router-dom';
 import HomePage from '../pages/home/home-page';
-import ShopPage from '../pages/auth/register-page';
 import AppointmentsPage from '../pages/blog/blog-page';
 // import { useAuthStore2 } from '../store/auth';
 import MainLayout from '../pages/layouts/main-layout';
 import ContacPage from '../pages/contact/contact-page';
 import AboutPage from '../pages/about/about';
-
+import ShopPage from '../pages/shop/shop';
 export default function Router() {
   // const isAuth = useAuthStore2((state) => state.isAuth  );
 
@@ -17,17 +16,8 @@ export default function Router() {
       children: [
         { element: <Navigate to="/home" />, index: true },
         { path: 'home', element: <HomePage /> },
-        {
-          path: 'shop',
-          element: <ShopPage />,
-          children: [
-            { path: 'shirts', element: <h1>shop/shirts</h1> },
-            { path: 'tote-bags', element: <h1 className="text-7xl text-black">tote bags</h1> },
-            { path: 'sweaters' },
-            { path: 'hoddies' },
-            { path: 'tazas' },
-          ],
-        },
+      
+        { path: 'shop', element: <ShopPage /> },
         { path: 'blog', element: <AppointmentsPage /> },
         { path: 'about', element: <AboutPage /> },
         { path: 'contact', element: <ContacPage /> },

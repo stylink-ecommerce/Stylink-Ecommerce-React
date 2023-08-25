@@ -283,18 +283,16 @@ const HomePage = () => {
           </header>
           <main className="flex flex-col justify-between gap-x-5 gap-y-5 sm:flex-row sm:flex-wrap">
             {productos.map((producto) => (
-              <div key={producto.name} className="w-full rounded-xl border border-skin-muted bg-skin-main p-1 sm:w-5/12 sm:grow lg:w-[30%] bg-[#7c6363]">
+              <div key={producto.name} className="w-full rounded-xl border border-skin-muted bg-skin-main p-1 sm:w-5/12 sm:grow lg:w-[30%] bg-[#7c6363] hover:scale-105">
                 <figure className="flex h-64 w-full justify-center p-0.1 ">
-                  <img src={producto.image} className="w-full h-full rounded-xl" alt=" imagen producto" />
+                  <img src={producto.image} className="w-full h-full rounded-xl " alt=" imagen producto" />
                 </figure>
-                <div>
-                  <span className="text-xl font-semibold text-secondary-white my">{producto.name}</span>
+                <div className='m-2 mb-0 flex justify-between'>
+                  <span className="text-xl font-semibold text-secondary-white">{producto.name}</span>
+                  <span className="text-xl font-bold text-skin-primary text-secondary-white-950 animate-bounce">L. {producto.price}</span>
                 </div>
-                <div className="flex justify-end">
-                  <span className="text-xl font-bold text-skin-primary">L. {producto.price}</span>
-                </div>
-                <div className='my-3  text-center mx-2'>
-                  <button className=" bg-[#0c0a09] px-20 py-2 bor rounded-lg">Comprar</button>
+                <div className='my-3  grid grid-flow-col justify-stretch mx-8'>
+                  <button className=" transition ease-in-out delay-150 bg-[#3b3b3b] hover:-translate-y-1 hover:scale-110 hover:bg-[#0a0a0a] duration-300  px-20 py-2 bor rounded-lg">Comprar</button>
                 </div>
               </div>
             ))}

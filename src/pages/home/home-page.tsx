@@ -9,16 +9,16 @@ const categorias = [
   },
   {
     name: 'Camisas',
-    imagePath: '/colores_camisas.jpg',
+    imagePath: '/bellota_hoodle.jpg',
     active: true,
   },
   {
     name: 'Tote Bags',
-    imagePath: '/tote_bags_bad_bunny.jpg',
+    imagePath: '/christamass_shirt.jpg',
   },
   {
     name: 'Suéteres',
-    imagePath: '/hs_hoodie.JPG',
+    imagePath: '/couple_drawing.JPG',
   },
   {
     name: 'Hoodies',
@@ -39,38 +39,166 @@ const productos = [
     name: 'Producto 1',
     category: 'Camisas',
     price: 25.99,
-    image: '/producto1_camisa.jpg',
+    image: '/bellota_hoodie.jpg',
   },
   {
     name: 'Producto 2',
     category: 'Tote Bags',
     price: 12.49,
-    image: '/producto2_tote_bag.jpg',
+    image: '/christamass_shirt.jpg',
   },
   {
     name: 'Producto 3',
     category: 'Suéteres',
     price: 35.75,
-    image: '/producto3_sweater.jpg',
+    image: '/couple_drawing.jpeg',
   },
   {
     name: 'Producto 4',
     category: 'Hoodies',
     price: 28.99,
-    image: '/producto4_hoodie.jpg',
+    image: '/harry_Styles.jpeg',
   },
   {
     name: 'Producto 5',
     category: 'Tazas',
     price: 8.99,
-    image: '/producto5_taza.jpg',
+    image: '/hs_hoodie.JPG',
   },
   {
     name: 'Producto 6',
     category: 'Polaroid',
     price: 50.0,
-    image: '/producto6_polaroid.jpg',
+    image: '/love_bed_momma.jpg',
   },
+  {
+    name: 'Producto 7',
+    category: 'Polaroid',
+    price: 50.0,
+    image: '/love_yourself_back.jpg',
+  },
+  {
+    name: 'Producto 8',
+    category: 'Polaroid',
+    price: 50.0,
+    image: '/nasa_hoodie.jpeg',
+  },
+  {
+    name: 'Producto 9',
+    category: 'Polaroid',
+    price: 50.0,
+    image: '/ouch_mi_crozon_totebag.jpeg',
+  },
+  {
+    name: 'Producto 10',
+    category: 'Polaroid',
+    price: 50.0,
+    image: '/por_las_buenas_amistades.jpg',
+  },
+  {
+    name: 'Producto 11',
+    category: 'Polaroid',
+    price: 50.0,
+    image: '/pulsera_gray.jpg',
+  },
+  {
+    name: 'Producto 12',
+    category: 'Polaroid',
+    price: 50.0,
+    image: '/pulseras_colores.jpg',
+  },
+  {
+    name: 'Producto 13',
+    category: 'Polaroid',
+    price: 50.0,
+    image: '/pulseras_thank_you.jpg',
+  },
+  {
+    name: 'Producto 14',
+    category: 'Polaroid',
+    price: 50.0,
+    image: '/reggalo_platya.jpg',
+  },
+  {
+    name: 'Producto 15',
+    category: 'Polaroid',
+    price: 50.0,
+    image: '/santa_gift.jpg',
+  },
+  {
+    name: 'Producto 16',
+    category: 'Polaroid',
+    price: 50.0,
+    image: '/self_love_club.jpg',
+  },
+  {
+    name: 'Producto 17',
+    category: 'Polaroid',
+    price: 50.0,
+    image: '/thank_you.jpg',
+  },
+  {
+    name: 'Producto 18',
+    category: 'Polaroid',
+    price: 50.0,
+    image: '/tote_bags_bad_bunny.jpg',
+  },
+  {
+    name: 'Producto 19',
+    category: 'Polaroid',
+    price: 50.0,
+    image: '/taza_rolling_stones.jpg',
+  },
+  {
+    name: 'Producto 20',
+    category: 'Polaroid',
+    price: 50.0,
+    image: '/taza_stylink.JPG',
+  },
+  {
+    name: 'Producto 21',
+    category: 'Polaroid',
+    price: 50.0,
+    image: '/un_coco_tote_bag.jpg',
+  },
+  {
+    name: 'Producto 22',
+    category: 'Polaroid',
+    price: 50.0,
+    image: '/unag_friend.jpg',
+  },
+  {
+    name: 'Producto 23',
+    category: 'Polaroid',
+    price: 50.0,
+    image: '/universal_soderman_shirt.jpg',
+  },
+  {
+    name: 'Producto 24',
+    category: 'Polaroid',
+    price: 50.0,
+    image: '/walls_louis_tomlinson.jpg',
+  },
+  {
+    name: 'Producto 25',
+    category: 'Polaroid',
+    price: 50.0,
+    image: '/ymlqdq_shirt.jpg',
+  },
+  {
+    name: 'Producto 25',
+    category: 'Polaroid',
+    price: 50.0,
+    image: '/ymlqdq_shirt.jpg',
+  },
+  {
+    name: 'Producto 25',
+    category: 'Polaroid',
+    price: 50.0,
+    image: '/ymlqdq_shirt.jpg',
+  },
+
+
   // Puedes continuar agregando más productos aquí...
 ];
 
@@ -155,15 +283,18 @@ const HomePage = () => {
           </header>
           <main className="flex flex-col justify-between gap-x-5 gap-y-5 sm:flex-row sm:flex-wrap">
             {productos.map((producto) => (
-              <div key={producto.name} className="w-full rounded-xl border border-skin-muted bg-skin-main p-5 sm:w-5/12 sm:grow lg:w-[30%]">
-                <figure className="flex h-64 w-full justify-center rounded-xl bg-secondary-white-300 p-5">
-                  <img src="/totte_bags_bad_bnny.png " className="w-fill h-full" alt="" />
+              <div key={producto.name} className="w-full rounded-xl border border-skin-muted bg-skin-main p-1 sm:w-5/12 sm:grow lg:w-[30%] bg-[#7c6363]">
+                <figure className="flex h-64 w-full justify-center p-0.1 ">
+                  <img src={producto.image} className="w-full h-full rounded-xl" alt=" imagen producto" />
                 </figure>
                 <div>
-                  <span className="text-xl font-semibold text-secondary-white-300">{producto.name}</span>
+                  <span className="text-xl font-semibold text-secondary-white my">{producto.name}</span>
                 </div>
                 <div className="flex justify-end">
-                  <span className="text-xl font-bold text-skin-primary">$. {producto.price}</span>
+                  <span className="text-xl font-bold text-skin-primary">L. {producto.price}</span>
+                </div>
+                <div className='my-3  text-center mx-2'>
+                  <button className=" bg-[#0c0a09] px-20 py-2 bor rounded-lg">Comprar</button>
                 </div>
               </div>
             ))}

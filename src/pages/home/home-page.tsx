@@ -156,11 +156,11 @@ const HomePage = () => {
           <main className="flex flex-col justify-between gap-x-5 gap-y-5 sm:flex-row sm:flex-wrap">
             {productos.map((producto) => (
               <div key={producto.name} className="w-full rounded-xl border border-skin-muted bg-skin-main p-5 sm:w-5/12 sm:grow lg:w-[30%]">
-                <figure className="flex h-64 w-full justify-center rounded-xl bg-secondary-white-300 p-5">
-                  <img src="/totte_bags_bad_bnny.png " className="w-fill h-full" alt="" />
+                <figure className="flex h-64 w-full justify-center rounded-xl bg-secondary-white-300">
+                  <img src={producto.image} className="w-full h-full rounded-xl" alt=""/>
                 </figure>
                 <div>
-                  <span className="text-xl font-semibold text-secondary-white-300">{producto.name}</span>
+                  <span className="text-xl font-semibold text-secondary-white-300 p-1.5">{producto.name}</span>
                 </div>
                 <div className="flex justify-end">
                   <span className="text-xl font-bold text-skin-primary">$. {producto.price}</span>

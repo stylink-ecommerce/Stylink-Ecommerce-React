@@ -227,7 +227,7 @@ const ShopPage = () => {
                 </figure>
                 <div className='m-2 mb-0 flex justify-between'>
                   <span className="text-xl font-semibold text-secondary-white">{producto.name}</span>
-                  <span className="text-xl font-bold text-skin-primary text-secondary-white-950 animate-bounce">L. {producto.price}</span>
+                  <span className="text-xl font-bold text-skin-primary text-secondary-white-950">L. {producto.price}</span>
                 </div>
                 <div className='my-3  grid grid-flow-col justify-stretch mx-8'>
                   <button className=" transition ease-in-out delay-150 bg-[#3b3b3b] hover:-translate-y-1 hover:scale-110 hover:bg-[#24522a] duration-300  px-20 py-2 bor rounded-lg">Comprar</button>

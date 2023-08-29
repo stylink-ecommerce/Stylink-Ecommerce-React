@@ -10,8 +10,8 @@ const Footer = () => {
           </figure>
           <span className="text-xl">Stylink todos los Derechos Reservados &copy;{new Date().getFullYear()}</span>
           <div className="flex">
-            <Instagram className="h-8 w-8" />
-            <Facebook className="h-8 w-8" />
+            <Facebook className="h-8 w-8"/>
+           <a href="https://www.instagram.com/stylinkhn/" target='blank'><Instagram className="h-8 w-8" /></a> 
           </div>
         </div>
       </footer>

@@ -28,7 +28,7 @@
       --bg-color-secondary: theme(colors.secondary-white.100);
       ----bg-home-cards: theme(colors.main-black.400);
       --color-text-primary: theme(colors.secondary-white.100);
-      --color-text-muted: theme(colors.main-black.400);
+      --color-text-muted: theme(colors.main-black.300);
       --color-text-secondary: theme(colors.main-black.main);
       /*Main gradient*/
       
@@ -67,7 +67,7 @@
         --bg-color-body: theme(colors.main-black.main);
         --bg-color-secondary: theme(colors.secondary-white.100);        
       --color-text-primary: theme(colors.secondary-white.100);
-        --color-text-muted: theme(colors.main-black.400);
+        --color-text-muted: theme(colors.main-black.300);
         --color-text-secondary: theme(colors.main-black.main);
 
               /*Main gradient*/
@@ -111,20 +111,26 @@
 
 @media (min-width: 1100px) {
     .main-page-bg {
-        background: var(--main-gradient-1);
-        background-image: linear-gradient(90deg, var(--main-gradient-1) 40%, var(--main-gradient-2)  60%, var(--main-gradient-3)  80%, var(--main-gradient-4)  100%), url('/chico_estadio.jpg');
-    
+        background: 
+            linear-gradient(0deg, rgba(0, 0, 0, 1)2%, rgba(0, 0, 0, 0) 10%),
+            linear-gradient(90deg, var(--main-gradient-1) 40%, var(--main-gradient-2) 60%, var(--main-gradient-3) 80%, var(--main-gradient-4) 100%),
+            url('/chico_estadio.jpg');
+        
         background-size: cover;
-        background-position: center;
-        background-position-y: top;
+        background-position: center top;
     }
     
+    
     .main-second-section-bg {
-        background:  var(--main-gradient-1);
-        background-image: linear-gradient(-90deg, var(--main-gradient-1) 30%, var(--main-gradient-2) 60%, var(--main-gradient-3) 80%, var(--main-gradient-4)100%), url('/harry_Styles.jpeg');
+        background: 
+        linear-gradient(0deg, rgba(0, 0, 0, 1)2%, rgba(0, 0, 0, 0) 10%),
+        linear-gradient(-180deg, rgba(0, 0, 0, 1)2%, rgba(0, 0, 0, 0) 10%),
+            linear-gradient(-90deg, var(--main-gradient-1) 30%, var(--main-gradient-2) 60%, var(--main-gradient-3) 80%, var(--main-gradient-4) 100%), 
+            url('/harry_Styles.jpeg');
         background-size: cover;
         background-position-y: center;
     }
+    
     
     
 }

@@ -104,6 +104,14 @@
     background-position-y: center;
 }
 
+.main-payment-methods-section {
+    background: rgb(0,0,0);
+    background-image: linear-gradient(20deg, var(--main-gradient-1) 30%, var(--main-gradient-2)60%, var(--main-gradient-3)80%, var(--main-gradient-4) 100%), url('/tote_bags_bad_bunny.jpg');
+    background-size: cover;
+    background-position: center;
+    background-position-y: top;
+}
+
 
 
 
@@ -129,6 +137,16 @@
             url('/harry_Styles.jpeg');
         background-size: cover;
         background-position-y: center;
+    }
+
+    .main-payment-methods-section {
+        background: 
+            linear-gradient(0deg, rgba(0, 0, 0, 1)2%, rgba(0, 0, 0, 0) 10%),
+            linear-gradient(90deg, var(--main-gradient-1) 40%, var(--main-gradient-2) 60%, var(--main-gradient-3) 80%, var(--main-gradient-4) 100%),
+            url('/tote_bags_bad_bunny.jpg');
+        
+        background-size: cover;
+        background-position: center top;
     }
     
     

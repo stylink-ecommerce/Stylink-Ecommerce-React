@@ -44,10 +44,15 @@ const Navbar = () => {
   }, []);
 
   return (
-    <header className={twMerge('fixed top-0 z-50 w-full py-4 transition duration-300 ease-linear', scrolled && 'bg-skin-secondary py-0')}>
+    <header
+      className={twMerge(
+        'fixed top-0 z-50 w-full border-b border-b-transparent py-4 transition duration-300 ease-linear',
+        scrolled && 'border-b-skin-secondary bg-skin-secondary py-0'
+      )}
+    >
       <nav
         className={twMerge(
-          `container mx-auto flex w-full items-center justify-between gap-x-5 bg-transparent px-7 lg:px-24`,
+          `container mx-auto flex w-full items-center justify-between gap-x-5 border border-transparent bg-transparent px-7 lg:px-24`,
           scrolled && 'text-skin-secondary'
         )}
       >
